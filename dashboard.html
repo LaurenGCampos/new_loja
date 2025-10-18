@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Hotmart Inspire</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Inspire</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="active"><a href="#">🏠 Início</a></li>
+      <li><a href="#">📦 Meus Produtos</a></li>
+      <li><a href="#">📈 Vendas</a></li>
+      <li><a href="#">💬 Afiliados</a></li>
+      <li><a href="#">⚙️ Configurações</a></li>
+      <li><a href="index.html">🚪 Sair</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dashboard-header">
+      <h1>Bem-vinda, Lauren 👋</h1>
+      <p>Resumo das suas vendas e produtos digitais</p>
+    </header>
+
+    <section class="metrics">
+      <div class="metric-card">
+        <h3>💰 Faturamento</h3>
+        <p class="value">R$ 12.480,00</p>
+        <span>+15% este mês</span>
+      </div>
+      <div class="metric-card">
+        <h3>📦 Produtos</h3>
+        <p class="value">8 ativos</p>
+        <span>2 novos esta semana</span>
+      </div>
+      <div class="metric-card">
+        <h3>👥 Afiliados</h3>
+        <p class="value">32 parceiros</p>
+        <span>+5 recentes</span>
+      </div>
+    </section>
+
+    <section class="grafico">
+      <h2>Desempenho de Vendas</h2>
+      <canvas id="vendasChart"></canvas>
+    </section>
+
+    <section class="produtos-dash">
+      <h2>Seus Produtos</h2>
+      <div class="grid-produtos">
+        <div class="card">
+          <img src="img/curso1.jpg" alt="Curso 1" />
+          <h3>Curso de Marketing Digital</h3>
+          <p>Vendas: 235 • Avaliação: ⭐⭐⭐⭐☆</p>
+        </div>
+        <div class="card">
+          <img src="img/curso2.jpg" alt="Curso 2" />
+          <h3>Criação de Conteúdo</h3>
+          <p>Vendas: 120 • Avaliação: ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="card">
+          <img src="img/curso3.jpg" alt="Curso 3" />
+          <h3>Gestão Financeira</h3>
+          <p>Vendas: 198 • Avaliação: ⭐⭐⭐⭐☆</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
